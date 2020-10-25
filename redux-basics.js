@@ -27,3 +27,4 @@ const store = createStore(rootReducer);
 store.dispatch({ type: "INC_COUNT", payload: 1 });
 store.dispatch({ type: "TEN_COUNT", payload: 10 });
 //Subscription
+store.subscription(() => console.log(store.getState()));
